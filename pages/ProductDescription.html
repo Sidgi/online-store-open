@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Product description</title>
+  </head>
+  <header>
+    <nav id='cartHeader' >
+      <!-- ##account## -->
+      <a class="CartLinkIcon" href="Account.html"><i class="fas fa-user-alt"></i></a>
+      <!-- ##shopping cart## -->
+      <a class="CartLinkIcon" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <!-- ##search## -->
+      <i class="fas fa-search searchButton" onclick="searchButton()"></i>
+      <form class="searchForm" action="index.html" method="post">
+        <input class="searchInput" type="text" name="search" placeholder="search">
+        <a class="linkGoogle" href=""> <button onclick="searchGoogle()" type="button" name="search">Search</button></a>
+      </form>
+    </nav>
+
+      <nav id="mainHeader">
+      <!-- ###8 navigation items plus logoPic### -->
+      <!-- ###Logo image### -->
+      <a href="../index.html"><img id="logoPic" src="../images/logo.png" alt="logo picture" title='logo picture'></a>
+      <!-- ##actual menues## -->
+      <!-- <a class="aNavBar" href="../index.html">Home</a> -->
+      <a class="aNavBar" href="Products.html">Products</a>
+      <a class="aNavBar" href="About.html">About</a>
+      <!-- <a class="aNavBar" href="PrivacyPolicy.html">Privacy Policy</a> -->
+      <a class="aNavBar" href="TermsOfService.html">Terms of Service</a>
+      <a class="aNavBar" href="ReturnPolicy.html">Return Policy</a>
+      <a class="aNavBar" href="ContactUs.html">Contact us</a>
+
+      </nav>
+  </header>
+  <body onload="addProduct()">
+    <img class="productDescriptionImage" id="productImage" src="" alt="">
+    <!-- <img src="productImage" alt=""> -->
+    <section class="productDescriptionSection">
+    <h2 class="productDescriptionH2">Product Description:</h2>
+    <ul class="productDescriptionUl">
+      <li class="productDescriptionLi" id="productModel"></li>
+      <li class="productDescriptionLi" id="productCondition"></li>
+      <li class="productDescriptionLi" id="productManufacturer"></li>
+      <li class="productDescriptionLi" id="productPrice"></li>
+      <li class="productDescriptionLi" id="productColor"></li>
+      <li class="productDescriptionLi" id="productGender"></li>
+      <!-- ##Added text in 'li'-tag, added span, assigned span 'id'-product year that will be changed dinamially
+      ##text of description will not be changed only span## -->
+      <li class="productDescriptionLi">Year: <span id="productModelYear"></span>  </li>
+    </ul>
+    </section>
+    <!-- <button type="button" name="button" onclick="">add</button> -->
+    <footer> <!--##footer## -->
+     <div class='footerDiv'>
+          <h1>Follow us</h1>
+             <ul id='ulFooter'>
+                 <a class="aFooter fab fa-instagram" href="https://www.instagram.com"></a>
+                 <a class="aFooter fab fa-facebook"  href='https://www.facebook.com'></a>
+                 <a class="aFooter fab fa-twitter"   href='https://www.twitter.com'></a>
+                 <a class="aFooter fab fa-youtube"   href='https://www.youtube.com'></a>
+             </ul>
+         <h6>Copyright © 2019 sVs, Inc. All rights reserved</h6>
+     </div>
+   </footer> <!--##footer end## -->
+    <script type="text/javascript" src="../js/main.js"> </script>
+  </body>
+</html>

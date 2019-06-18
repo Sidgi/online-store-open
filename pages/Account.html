@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>About</title>
+  </head>
+  <body>
+      <header>
+        <nav id='cartHeader' >
+          <!-- ##account## -->
+          <a class="CartLinkIcon" href="Account.html"><i class="fas fa-user-alt"></i></a>
+          <!-- ##shopping cart## -->
+          <a class="CartLinkIcon" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <!-- ##search## -->
+          <i class="fas fa-search searchButton" onclick="searchButton()"></i>
+          <form class="searchForm" action="index.html" method="post">
+            <input class="searchInput" type="text" name="search" placeholder="search">
+            <a class="linkGoogle" href="">  <button onclick="searchGoogle()" type="button" name="search">Search</button></a>
+          </form>
+        </nav>
+
+          <nav id="mainHeader">
+          <!-- ###8 navigation items plus logoPic### -->
+          <!-- ###Logo image### -->
+          <a href="../index.html"><img id="logoPic" src="../images/logo.png" alt="logo picture" title='logo picture'></a>
+          <!-- ##actual menues## -->
+          <!-- <a class="aNavBar" href="../index.html">Home</a> -->
+          <a class="aNavBar" href="Products.html">Products</a>
+          <a class="aNavBar" href="About.html">About</a>
+          <!-- <a class="aNavBar" href="PrivacyPolicy.html">Privacy Policy</a> -->
+          <a class="aNavBar" href="TermsOfService.html">Terms of Service</a>
+          <a class="aNavBar" href="ReturnPolicy.html">Return Policy</a>
+          <a class="aNavBar" href="ContactUs.html">Contact us</a>
+          </nav>
+      </header>
+      <main>
+        <div class="DivMyAccount">
+            <form class="contactUsForm" id="accountPageFormSignUp">
+              <label class="" for="firstName">First Name:</label>
+              <input class="formFields" id="" type="text" name="" placeholder ="First Name">
+              <label class="" for="lastName">Last Name:</label>
+              <input class="formFields" id="" type="text" name="" placeholder="Last Name">
+              <label class="" for="emailAddress">Email:</label>
+              <input class="formFields" id="" type="text" name="" placeholder="info@example.com">
+              <label class="" for="signUpButton"></label>
+              <input class="formFields submitContactForm" id="signUpButton" onclick="alertMessage(this.id)" type="submit" name="" value="Sign Up">
+            </form>
+            <form class="contactUsForm" id="accountPageFormSignIn">
+              <label for="">Email:</label>
+              <input class="formFields" type="text" name="" placeholder="info@example.com">
+              <label for="">Password</label>
+              <input class="formFields" type="password" name="" placeholder="password">
+              <label for=""></label>
+              <input id="signInButton" onclick="alertMessage(this.id)" class="formFields submitContactForm" type="submit" name="" value="Sign in">
+            </form>
+        </div>
+      </main>
+       <footer> <!--##footer## -->
+        <div class='footerDiv'>
+             <h1>Follow us</h1>
+                <ul id='ulFooter'>
+                    <a class="aFooter fab fa-instagram" href="https://www.instagram.com"></a>
+                    <a class="aFooter fab fa-facebook"  href='https://www.facebook.com'></a>
+                    <a class="aFooter fab fa-twitter"   href='https://www.twitter.com'></a>
+                    <a class="aFooter fab fa-youtube"   href='https://www.youtube.com'></a>
+                </ul>
+            <h6>Copyright © 2019 sVs, Inc. All rights reserved</h6>
+        </div>
+      </footer> <!--##footer end## -->
+      <script type="text/javascript" <script src="../js/main.js" charset="utf-8"></script>
+      </body>
+      </html>

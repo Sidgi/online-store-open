@@ -1,0 +1,392 @@
+*{
+  /* border: solid; */
+}
+/* desingn navigation bar */
+body{
+  border: 0px;
+  margin:0;
+  padding: 0;
+  /* position: relative; */
+}
+/* ####removes blue border around button or input submit## */
+button:focus {
+  outline:0;
+}
+input:focus{
+  outline: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* ###finished blue border removal### */
+header{
+  /* position: fixed; */
+  margin: 0;
+  border: transparent 0px;
+}
+#mainHeader{
+  display:flex;
+  justify-content: space-around;
+  top: 0;
+  width: 100vw;
+}
+.aNavBar{
+  text-decoration: none;
+  color: black;
+  margin: 2%;
+  font-family: 'Arial Black';
+  font-size: 12pt;
+}
+#logoPic{
+  width: 80px;
+  height: 80px;
+}
+.aNavBar:hover{
+  transform: scale(1.3,1.3);
+  color: red;
+}
+#logoPic:hover{
+  transform: scale(1.2,1.2);
+  background-color: red;
+  border-radius: 100%;
+}
+#cartHeader{
+  float: right;
+  word-spacing: 40px;
+  margin: 2%;
+}
+#cartHeader   i:hover{
+  transform: scale(2,2);
+  cursor: pointer;
+}
+.CartLinkIcon{
+  color: black;
+  /* text-decoration: none; */
+}
+/* navigation bar design finished */
+
+/* footer design starts here */
+.aFooter{
+  /* ##icons design## */
+  text-decoration: none;
+  color: black;
+  transform: scale(2,2);
+  margin: 7px;
+}
+.footerDiv{
+  /* ##wrapped icons and h1 and h6 into div## */
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+#ulFooter{
+  /* ##Essential othervise icons don't stay in center## */
+  margin: 0;
+  padding: 0;
+}
+footer{
+  /* margin-top: 20%; */
+}
+/* ##footer design ends here## */
+
+/* ###Contact Us design starts here### */
+.contactUsForm{
+  height: 80%;
+  margin-top: 3%;
+  margin-left: 3%;
+  font-size: 20pt;
+}
+
+.formFields{
+  display: block;
+  width: 80%;
+  height: 40px;
+  font-size: 14pt;
+
+}
+#message{
+  overflow:hidden;
+}
+.submitContactForm{
+  margin-top: 10px;
+  color:white;
+  background-color: black;
+  border-radius:30px;
+}
+/* ##Contact form finishes here## */
+.mainContact{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+/* ##google maps image## */
+.mapContactImg{
+  width: 40vw;
+  margin-top:5%;
+  height:60vh;
+}
+.mapContactImg:hover{
+  transform: scale(1.1,1.1);
+}
+.contactUsForm{
+  width:20%;
+  margin-right: 300px;
+}
+.contactAddress{
+  position: absolute;
+  top: 20%;
+  left:35%;
+  text-align: center;
+  width: 200px;
+  animation: animation 5s ease-in-out forwards;
+}
+@keyframes animation{
+ 0%{
+  opacity:0;
+  transform: translate(0,-200px);
+ }
+
+ 100%{
+ 	opacity:1;
+  transform: translate(0,0);
+ }
+}
+/* ###ContactUs page finished here### */
+.TermsOfServiceDiv{
+
+  margin-left:5%;
+  margin-right:5%;
+}
+.searchForm{
+  display: none;
+  margin-top: 10%;
+  text-align: center;
+}
+/* ###products page### */
+.productsMainDiv{
+  overflow: hidden;
+  display: grid;
+  justify-content: space-around;
+  grid-template-areas:
+  "product1 product2 product3"
+  "product4 product5 product3"
+  "product6 product7 product3"
+}
+ img:hover{
+    transform: scale(1.02,1.02);
+}
+.productPage1{
+  grid-area: product1;
+
+}
+.productPage2{
+  grid-area: product2;
+}
+.productPage3{
+  height: 600px;
+  grid-area: product3;
+  position: fixed;
+  left:75%;
+  overflow: scroll;
+  text-overflow: scroll;
+
+}
+.productPage4{
+  grid-area: product4;
+}
+
+.productPage5{
+  grid-area: product5;
+}
+.productPage6{
+  grid-area: product6;
+}
+.productPage7{
+  grid-area: product7;
+}
+.bestSellingProducts{
+  display: block;
+}
+.textProduct{
+  text-align: center;
+}
+.buttonAddtoCart{
+cursor: pointer;
+float:right;
+margin-top:0;
+border-radius: 100%;
+}
+.outModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+#modalIdProducts:target{
+  display: block;
+}
+.modalContent{
+  top:30vh;
+  background-color: white;
+  width:50vw;
+  padding: 30px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+}
+#closingModal{
+  top: -13px;
+  position: absolute;
+  right: -10px;
+  background: red;
+  border-radius: 100%;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+}
+.itemsModalCss{
+  text-align: center;
+  margin-right: 3%;
+}
+
+/* ###products page finishes here### */
+/* ###product Description page starts here### */
+.productDescriptionImage{
+/* margin-left: 45%; */
+position:absolute;
+top:30%;
+left: 45%;
+}
+.productDescriptionUl{
+  margin-bottom: 20%;
+}
+.productDescriptionLi{
+  font-weight: bold;
+  font-size: 15pt;
+  padding: 5px;
+  transition: transform 2s;
+}
+.productDescriptionLi:hover{
+  color:red;
+  cursor: pointer;
+  transform: scale3d(1.2,1.2,1.3) translate(150px,0);
+}
+.productDescriptionH2{
+  padding-left: 2%;
+}
+.productDescriptionH2:hover{
+  color:red;
+  cursor: pointer;
+}
+.productDescriptionSection{
+  margin-left:20%;
+}
+/* ### product description page finishes here### */
+/* ###Cart Page begins here### */
+.cartPageLiAttribute{
+  color:red;
+}
+/* ###Cart page finishes here### */
+
+/* ###Page About starts here### */
+
+.paralaxAboutPage{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-weight: 800;
+  height: 100vh;
+  width:  100vw;
+}
+/* ###paralax dives### */
+ .paralax1Div{
+  background-image: url(../images/manhattan.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.paralax2Div{
+  background:url(../images/bikeMountains.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.paralax3Div{
+  background:url(../images/bikeWater.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.paralax4Div{
+  background:url(../images/bikeNature.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* ###paralax dives finished### */
+.paralaxTextDiv1{
+  background: linear-gradient(45deg, grey, black);
+  padding: 10%;
+}
+.paralaxTextDiv2{
+  background: linear-gradient(45deg, grey, black);
+  padding: 10%;
+}
+.paralaxTextDiv3{
+  background: linear-gradient(45deg, grey, black);
+  padding: 10%;
+}
+.aboutPageSignh2{
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  color:white;
+}
+/* ###Page about finshes here### */
+/* ###Account page starts here#### */
+.DivMyAccount{
+  /* height: 100vh; */
+  margin-bottom: 10%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#accountPageFormSignUp{
+  margin-right: 0px;
+  margin-left: auto;
+}
+#accountPageFormSignIn{
+  margin-top: 8%;
+}
+/* ###Account page finishes here### */
+/* ### return policy page starts here### */
+#returnPolicyRuleInput{
+  font-size: 20pt;
+}
+#returnPolicyRuleList{
+  font-size: 20pt;
+}
+.returnPolicyRuleButton{
+  padding:15px;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: fantasy;
+  border-radius: 40px;
+  box-shadow: 3px 7px black;
+}
+.returnPolicyRuleButton:active{
+  box-shadow: none ;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* ###return policy finishes here### */
+/* ##speech recognition ## */
+.divSpeechRecog{
+  width: 100vw;
+  height: 100vh;
+}
+/* ##speech recognition## */

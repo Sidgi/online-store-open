@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    img{
+      width:300px;
+      height: 400px;
+      position: absolute;
+      top:40%;
+      left:40%;
+      transition: margin 3s ease-in-out;
+      /*transition: left 3s ease-in-out;*/
+    }
+
+      #h1TextLandingPage{
+        position: absolute;
+        top: 65%;
+        left: 20%;
+      }
+      #pTextLandingPage{
+        position: absolute;
+        top: 70%;
+        left: 20%;
+      }
+
+  </style>
+  <title>Home</title>
+</head>
+<body>
+  <div>
+
+    <a id='firstImageA' ondblclick="aFirstImage()" href="#"><img id='firstImage' ondblclick="aFirstImage()" onclick="positoned1()" src="images/matreshka.png" alt="FI" title="Home">  </a>
+    <a id='secondImageA' ondblclick="aFirstImage()" href="#"><img id='secondImage' alt="SeI" ondblclick="aSecondImage()" onclick="positoned2()"src="images/matreshka.png"></a>
+    <a id='thirdImageA' href="#"><img id='thirdImage' alt="TI" ondblclick="aThirdImage()" onclick="positoned3()" src="images/matreshka.png"></a>
+    <a id='fourthImageA' href="#"><img id='fourthImage' alt="FI" ondblclick="aFourthImage()" onclick="positoned4()" src="images/matreshka.png"></a>
+    <a id='fifthImageA'  href="#"><img id='fifthImage' alt="FiI"ondblclick="aFifthImage()"  onclick="positoned5()" src="images/matreshka.png"></a>
+    <a id='sixImageA'  href="#"><img id='sixImage'alt="SxI" ondblclick="aSixImage()" onclick="positoned()"   src="images/matreshka.png"></a>
+
+    <h1 id="h1TextLandingPage">Menues</h1>
+    <p id="pTextLandingPage">Double click to go to the page</p>
+  </div>
+  <script type="text/javascript" <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>

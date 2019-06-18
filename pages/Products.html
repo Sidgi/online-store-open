@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Products</title>
+  </head>
+  <body onload="priceNameBike()"  >
+      <header>
+        <nav id='cartHeader' >
+          <!-- ##account## -->
+          <a class="CartLinkIcon" href="Account.html"><i class="fas fa-user-alt"></i></a>
+          <!-- ##shopping cart## -->
+          <a class="CartLinkIcon" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <f id="shoppingCartCountNumber">0</f>
+          <!-- ##search## -->
+          <i class="fas fa-search searchButton" onclick="searchButton()"></i>
+          <form class="searchForm" action="index.html" method="post">
+            <input class="searchInput" type="text" name="search" placeholder="search">
+            <a class="linkGoogle" href=""> <button onclick="searchGoogle()" type="button" name="search">Search</button></a>
+          </form>
+        </nav>
+
+          <nav id="mainHeader">
+          <!-- ###6 navigation items plus logoPic### -->
+          <!-- ###Logo image### -->
+          <a href="../index.html"><img id="logoPic" src="../images/logo.png" alt="logo picture" title='logo picture'></a>
+          <!-- ##actual menues## -->
+          <a class="aNavBar" href="Products.html">Products</a>
+          <a class="aNavBar" href="About.html">About</a>
+          <a class="aNavBar" href="TermsOfService.html">Terms of Service</a>
+          <a class="aNavBar" href="ReturnPolicy.html">Return Policy</a>
+          <a class="aNavBar" href="ContactUs.html">Contact us</a>
+
+          </nav>
+      </header>
+      <main>
+          <div class="productsMainDiv">
+              <div class="productPage1"> <!-- ##first section## -->
+                  <img id="bike1" src="../images/bike1.jpeg" onclick="localStore(this.id)">
+                <div class="">
+                  <button id="bike1_" class="buttonAddtoCart" type="button" name="button" onclick="find(this.id)">Add to cart</button>
+                  <a onclick="displayModalCss(bike1)" href="#modalIdProducts"><p class="pTagsDescriptionBike">Bike 1</p></a>
+                </div>
+              </div> <!-- ##end of first section### -->
+              <div class="productPage2">
+                <img id="bike2" onclick="localStore(this.id)" src="../images/bike2.jpeg" alt="" >
+                <div class="">
+                <button id="bike2_" class="buttonAddtoCart" type="button" name="button" onclick="find(this.id)">Add to cart</button>
+                <a onclick="displayModalCss(bike2)" href="#modalIdProducts"><p class="pTagsDescriptionBike">Bike 2</p></a>
+                </div>
+              </div>
+              <div class="productPage3" >
+                <h2 class="textProduct" >Best selling Products</h2>
+                <img id='bike11' class="bestSellingProducts buttonBike" src="../images/bike11.jpg" alt="" onclick="localStore(this.id)">
+                <img id='bike10' class="bestSellingProducts" src="../images/bike10.jpg" alt="" onclick="localStore(this.id)">
+                <img id='bike12' class="bestSellingProducts" src="../images/bike12.jpg" alt="" onclick="localStore(this.id)">
+                <img id='bike9' class="bestSellingProducts" src="../images/bike9.jpg" alt="" onclick="localStore(this.id)">
+                <img id='bike3' class="bestSellingProducts" src="../images/bike11.jpg" alt="" onclick="localStore(this.id)">
+                <img id='bike8' class="bestSellingProducts" src="../images/bike8.jpg" alt="" onclick="localStore(this.id)">
+                <p></p>
+              </div>
+              <div class="productPage4">
+                <img id="bike4" src="../images/bike4.jpeg" alt="" onclick="localStore(this.id)">
+                <div class="">
+                <button id="bike4_" class="buttonAddtoCart" type="button" name="button" onclick="find(this.id)">Add to cart</button>
+                <a onclick="displayModalCss(bike4)" href="#modalIdProducts"><p class="pTagsDescriptionBike">Bike 3</p></a>
+                </div>
+              </div>
+              <div class="productPage5">
+                <img id="bike5" src="../images/bike5.jpg" alt="" onclick="localStore(this.id)">
+                <div class="">
+                <button id="bike5_" class="buttonAddtoCart" type="button" name="button" onclick="find(this.id)">Add to cart</button>
+                <a onclick="displayModalCss(bike5)" href="#modalIdProducts"><p class="pTagsDescriptionBike">Bike 4</p></a>
+                </div>
+              </div>
+              <div class="productPage6">
+                <img id="bike6" src="../images/bike6.jpeg" alt="" onclick="localStore(this.id)">
+                <div class="">
+                <button id="bike6_" class="buttonAddtoCart" type="button" name="button" onclick="find(this.id)">Add to cart</button>
+                <a onclick="displayModalCss(bike6)" href="#modalIdProducts"><p class="pTagsDescriptionBike">Bike 5</p></a>
+                </div>
+              </div>
+              <div class="productPage7">
+                <img id="bike7" src="../images/bike7.jpeg" alt="" onclick="localStore(this.id)">
+                <div class="">
+                <button id="bike7_" class="buttonAddtoCart" type="button" name="button" onclick="find(this.id)">Add to cart</button>
+                <a onclick="displayModalCss(bike7)" href="#modalIdProducts"><p class="pTagsDescriptionBike">Bike 6</p></a>
+                </div>
+              </div>
+          </div>
+          <!-- ###modal Css### -->
+          <div id="modalIdProducts" class="outModal" onclick="closeModalCss()">
+            <div class="modalContent">
+               <a href="#closingModal" id="closingModal">X</a>
+               <img src="../images/bike6.jpeg" alt="image" class="itemsModalCss" id="modalImageIdContent">
+               <p class="itemsModalCss"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <!-- ###Modal finished### -->
+      </main>
+       <footer> <!--##footer## -->
+        <div class='footerDiv'>
+             <h1>Follow us</h1>
+                <ul id='ulFooter'>
+                    <a class="aFooter fab fa-instagram" href="https://www.instagram.com"></a>
+                    <a class="aFooter fab fa-facebook"  href='https://www.facebook.com'></a>
+                    <a class="aFooter fab fa-twitter"   href='https://www.twitter.com'></a>
+                    <a class="aFooter fab fa-youtube"   href='https://www.youtube.com'></a>
+                </ul>
+            <h6>Copyright © 2019 sVs, Inc. All rights reserved</h6>
+        </div>
+      </footer> <!--##footer end## -->
+      <script type="text/javascript" <script src="../js/main.js" charset="utf-8"></script>
+  </body>
+</html>
